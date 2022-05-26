@@ -4,75 +4,75 @@
 
 isHavePet = (kondisi) => {
     switch (kondisi) {
-        case true : return 'Yes';
-        default : return 'No';
+        case true : return "Yes";
+        default : return "No";
     }
 }
 
 const firstUser = {
-    name : 'Monica',
-    gender: 'Female',
+    name : "Monica",
+    gender: "Female",
     age : 17,
-    email : 'monica@dingdong.com',
-    favoritColor: new Set(['Yellow', 'Pink', 'White', 'Purple']),
+    email : "monica@dingdong.com",
+    favoritColor: new Set(["Yellow", "Pink", "White", "Purple"]),
     isHavePet : isHavePet(true),
     education : [
         {
-            name : 'SD 01',
-            city : 'Jakarta',
+            name : "SD 01",
+            city : "Jakarta",
             graduate : 2016
         },
         {
-            name : 'SMP 02',
-            city : 'Jakarta',
+            name : "SMP 02",
+            city : "Jakarta",
             graduate : 2019
         },
         {
-            name : 'SMA 03',
-            city : 'Tangerang',
+            name : "SMA 03",
+            city : "Tangerang",
             graduate : undefined
         },
     ],
     favoriteRestaurant : new Set(
-        ['Bento','Sushi','Pancake','Eggy',
-        'Tempura', 'Bento', 'Eggy', 'Padang', 
-        'Tteok', 'Sushi', 'Sushi']
+        ["Bento","Sushi","Pancake","Eggy",
+        "Tempura", "Bento", "Eggy", "Padang", 
+        "Tteok", "Sushi", "Sushi"]
     )
 };
 
 const secondUser = {
-    name : 'Wendy',
-    gender: 'Male',
+    name : "Wendy",
+    gender: "Male",
     age : 23,
-    email : 'wendy@dingdong.com',
-    favoritColor: new Set(['Blue', 'Black', 'Grey']),
+    email : "wendy@dingdong.com",
+    favoritColor: new Set(["Blue", "Black", "Grey"]),
     isHavePet : isHavePet(false),
     education : [
         {
-            name : 'SD 02',
-            city : 'Jakarta',
+            name : "SD 02",
+            city : "Jakarta",
             graduate : 2010
         },
         {
-            name : 'SMP 03',
-            city : 'Bogor',
+            name : "SMP 03",
+            city : "Bogor",
             graduate : 2013
         },
         {
-            name : 'SMA 01',
-            city : 'Surabaya',
+            name : "SMA 01",
+            city : "Surabaya",
             graduate : 2016
         },
         {
-            name : 'Universitas Maju',
-            city : 'Tangerang',
+            name : "Universitas Maju",
+            city : "Tangerang",
             graduate : undefined
         },
     ],
     favoriteRestaurant : new Set(
-        ['Tempura', 'Bento', 'Sushi', 
-        'Pancake', 'Padang', 'Katsu',
-         'Geprek', 'Pancake', 'Eggy']
+        ["Tempura", "Bento", "Sushi", 
+        "Pancake", "Padang", "Katsu",
+         "Geprek", "Pancake", "Eggy"]
     )
 };
 
