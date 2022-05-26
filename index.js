@@ -14,7 +14,7 @@ const firstUser = {
     gender: "Female",
     age : 17,
     email : "monica@dingdong.com",
-    favoritColor: new Set(["Yellow", "Pink", "White", "Purple"]),
+    favoriteColor: new Set(["Yellow", "Pink", "White", "Purple"]),
     isHavePet : isHavePet(true),
     education : [
         {
@@ -45,7 +45,7 @@ const secondUser = {
     gender: "Male",
     age : 23,
     email : "wendy@dingdong.com",
-    favoritColor: new Set(["Blue", "Black", "Grey"]),
+    favoriteColor: new Set(["Blue", "Black", "Grey"]),
     isHavePet : isHavePet(false),
     education : [
         {
