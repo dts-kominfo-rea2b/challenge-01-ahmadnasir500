@@ -8,13 +8,32 @@ isHavePet = (kondisi) => {
         default : return "No";
     }
 }
+// input data firstUser
+favoriteRestaurantFirstUser = [];
+favoriteColorFirstUser = [];
+
+inputFavoriteRestaurantFirstUser = new Set(
+    ["Bento","Sushi","Pancake","Eggy",
+    "Tempura", "Bento", "Eggy", "Padang", 
+    "Tteok", "Sushi", "Sushi"]
+);
+inputFavoriteColorFirstUser = new Set(["Yellow", "Pink", "White", "Purple"]);
+
+for (const item of inputFavoriteRestaurantFirstUser) {
+    favoriteRestaurantFirstUser.push(item);    
+}
+for (const item of inputFavoriteColorFirstUser) {
+    favoriteColorFirstUser.push(item);    
+}
+// end input data firstUser
+
 
 const firstUser = {
     name : "Monica",
     gender: "Female",
     age : 17,
     email : "monica@dingdong.com",
-    favoriteColor: new Set(["Yellow", "Pink", "White", "Purple"]),
+    favoriteColor: favoriteColorFirstUser,
     isHavePet : isHavePet(true),
     education : [
         {
@@ -33,19 +52,34 @@ const firstUser = {
             graduate : undefined
         },
     ],
-    favoriteRestaurant : new Set(
-        ["Bento","Sushi","Pancake","Eggy",
-        "Tempura", "Bento", "Eggy", "Padang", 
-        "Tteok", "Sushi", "Sushi"]
-    )
+    favoriteRestaurant : favoriteRestaurantFirstUser,
 };
+
+// input data firstUser
+favoriteRestaurantSecondUser = [];
+favoriteColorSecondUser = [];
+
+inputFavoriteRestaurantSecondUser = new Set(
+    ["Tempura", "Bento", "Sushi", 
+    "Pancake", "Padang", "Katsu",
+     "Geprek", "Pancake", "Eggy"]
+);
+inputFavoriteColorSecondUser = new Set(["Blue", "Black", "Grey"]);
+
+for (const item of inputFavoriteRestaurantSecondUser) {
+    favoriteRestaurantSecondUser.push(item);    
+}
+for (const item of inputFavoriteColorSecondUser) {
+    favoriteColorSecondUser.push(item);    
+}
+// end input data firstUser
 
 const secondUser = {
     name : "Wendy",
     gender: "Male",
     age : 23,
     email : "wendy@dingdong.com",
-    favoriteColor: new Set(["Blue", "Black", "Grey"]),
+    favoriteColor: favoriteColorSecondUser,
     isHavePet : isHavePet(false),
     education : [
         {
@@ -69,11 +103,7 @@ const secondUser = {
             graduate : undefined
         },
     ],
-    favoriteRestaurant : new Set(
-        ["Tempura", "Bento", "Sushi", 
-        "Pancake", "Padang", "Katsu",
-         "Geprek", "Pancake", "Eggy"]
-    )
+    favoriteRestaurant : favoriteRestaurantSecondUser,
 };
 
 // TODO: Masukkan hasil akhir dari kedua user di sini
